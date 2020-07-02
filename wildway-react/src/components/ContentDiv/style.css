@@ -1,0 +1,8 @@
+.contentDiv {
+    background-color: rgb(170, 181, 196);
+    opacity: 1;
+    margin-top: 20px;
+    width:80%;
+    margin-left: 10%;
+    min-height: 400px;
+}

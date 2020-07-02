@@ -1,0 +1,46 @@
+.header {
+    padding: 15px;
+    opacity: .9;
+    background-color: black;
+    position: relative;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+.wildway {
+    margin-top: 20px;
+}
+
+.wildway p {
+    font-family: 'Crimson Text', serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 20px;
+    font-size: large;
+    color: white;
+    opacity: 1;
+    text-align: center;
+    text-indent: 20px;
+}
+
+.webDesign {
+    width: 100vw;
+    margin-top: -30px;
+
+}
+
+.webDesign p {
+    font-family: 'Crimson Text', serif;
+    margin-left:12.5px;
+    font-size: small;
+    color: white;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+.line {
+    margin: 35px;
+    height: 1px;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgb(255, 0, 0) 50%, rgba(0,0,0,1) 90%);
+}

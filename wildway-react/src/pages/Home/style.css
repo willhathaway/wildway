@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Megrim&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+.bar {
+    padding: 15px;
+    opacity: .9;
+    background-color: black;
+    position: absolute;
+    margin-top: -50%;
+    width: 100vw;
+    height: 26%;
+}
+
+.animate {
+    width: 750px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-column-gap: 5px;
+}
+
+.letterDiv {
+    /* font-family: 'Megrim', cursive; */
+    font-family: 'Crimson Text', serif;
+    color: white;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    float: left;
+    height: 75px;
+    font-size: larger;
+    position: relative;
+    z-index: 1;
+}
+
+.nw {
+    animation: rise 5s forwards;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+
+@keyframes rise {
+    from {
+        top: 0px;
+        opacity: 1;
+    }
+
+    to {
+        top: -75px;
+        opacity: 0;
+    }
+}
+
+#div1,
+#div2,
+#div3 {
+    animation: unify1 5s forwards;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@keyframes unify1 {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 945%;
+    }
+}
+
+#div9 {
+    animation: unify2 5s forwards;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@keyframes unify2 {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 355%;
+    }
+}
+
+#div21,
+#div22,
+#div23 {
+    animation: unify3 5s forwards;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@keyframes unify3 {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: 945%;
+    }
+}
+
+.wildwayIndex {
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 20px;
+    color: white;
+    opacity: 1;
+    text-align: center;
+    text-indent: 20px;
+    display: none;
+    margin-top: 30px;
+}
+
+.webDesignIndex {
+    opacity: 0;
+    width: 100vw;
+    margin-top: -50px;
+    animation: webdesign 5s forwards ease;
+    animation-delay: 2s;
+}
+
+.webDesignIndex p {
+    font-family: 'Crimson Text', serif;
+    margin-left:12.5px;
+    font-size: small;
+    color: white;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+@keyframes webdesign {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.line {
+    margin: 35px;
+    height: 1px;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgb(255, 0, 0) 50%, rgba(0,0,0,1) 90%);
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+nav {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    border: 1px 0 1px 0 solid #efefef;
+}
+
+nav a:hover {
+    transform: scale(1.3);
+    transition: all .5s;
+    color: white;
+}
+
+@media only screen and (max-width: 980px) {
+
+    #logoIndex {
+        display: block;
+    }
+
+
+    #divPrime {
+        display: none;
+        animation: none;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+
+}
