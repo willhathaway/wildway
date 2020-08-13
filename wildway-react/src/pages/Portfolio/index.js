@@ -11,7 +11,7 @@ function Portfolio() {
 
             <div>
 
-            <Header />
+            <Header hidden={false} />
 
             <ContentDiv>
                 <Title title="Portfolio" />

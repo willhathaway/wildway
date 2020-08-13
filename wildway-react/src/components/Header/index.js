@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import "./style.css";
 
 
-function Header() {
+function Header(props) {
+
+    
+
+    if (props.hidden === false) {
 
     return (
         <div className="header">
@@ -15,14 +19,18 @@ function Header() {
 
                 <div id="nav-buttons">
                     <nav>
-                        <a href="/about" id="nav-about">about</a>
+                        <a href="/journal" id="nav-journal">journal</a>
+                        <a href="/#contact" id="nav-contact">contact</a>
                         <a href="/portfolio" id="nav-portfolio">portfolio</a>
-                        <a href="/contact" id="nav-contact">contact</a>
                     </nav>
                 </div>
             </div>
         </div>
     )
+    }
+    else {
+        return <div></div>
+    }
 }
 
 

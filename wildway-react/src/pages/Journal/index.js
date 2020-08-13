@@ -4,16 +4,18 @@ import Header from '../../components/Header/index.js';
 import Title from "../../components/Title/index.js"
 import ContentDiv from "../../components/ContentDiv";
 
-function About() {
+function Journal() {
+
 
     return (
 
         <div>
 
-            <Header />
+            <Header hidden={false}/>
 
             <ContentDiv>
-                <Title title="About" />
+                <Title title="Journal" />
+          
             </ContentDiv>
 
         </div>
@@ -21,4 +23,4 @@ function About() {
 }
 
 
-export default About;
+export default Journal;

@@ -1,8 +1,9 @@
 .contentDiv {
-    background-color: rgb(170, 181, 196);
+    background: rgb(176,176,176);
+    background: linear-gradient(0deg, rgb(221, 212, 233) 10%, rgb(254, 253, 255) 90%);
     opacity: 1;
     margin-top: 20px;
     width:80%;
     margin-left: 10%;
-    min-height: 400px;
+    min-height: 80vh;
 }
