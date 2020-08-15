@@ -7,9 +7,11 @@ import AboutMe from "../../content/images/about-me.png"
 import ContactMe from "../../content/images/contact.png"
 import Bio from "../../components/Bio";
 
+// center the fucking section titles
+
+// while you're at it, add the fucking scroll button to the about me page please
+
 function Home() {
-
-
 
     return (
 
@@ -93,8 +95,9 @@ function Home() {
                 </div>
                 <div className="inquiries">
 
-                    <h3></h3>
+                    <p className="emailText">Please click below to send me an email. I will respond as soon as possible. Thank you.</p>
                     
+                    <button className="emailBtn"><a href="mailto:william.hathaway38@gmail.com" subject="inquiry">Send an email</a></button>
 
                 </div>
 

@@ -13,7 +13,7 @@
 
 .homeContainer {
     min-height: 100vh;
-    ;
+    
 }
 
 .koi {
@@ -149,7 +149,7 @@
 .webDesignIndex {
     opacity: 0;
     width: 100vw;
-    margin-top: -50px;
+    margin-top: -30px;
     animation: webdesign 5s forwards ease;
     animation-delay: 2s;
 }
@@ -191,9 +191,11 @@
 }
 
 #clickToScroll {
+    text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     animation: clickToScroll 1s forwards ease;
     animation-delay: 1s;
+    color: white;
 }
 
 @keyframes clickToScroll {
@@ -230,7 +232,6 @@
 
 .sectionTitleDiv {
     width: 96vw;
-    text-align: center;
     padding-top: 10px;
     position: absolute;
 }
@@ -246,12 +247,13 @@
 */
 
 .sectionTitle {
-    width: 60vw;
+    font-size: x-large;
+    text-align: center;
+    width: 60%;
     height: 30px;
     font-family: 'Crimson Text', serif;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
     color: black;
 }
 
@@ -292,12 +294,13 @@
 }
 
 .contactTitle {
-    width: 60vw;
+    font-size: x-large;
+    text-align: center;
+    width: 60%;
     height: 30px;
     font-family: 'Crimson Text', serif;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
     color: gold !important;
 }
 
@@ -306,6 +309,32 @@
     background-color: white;
     min-height: 70vh;
     margin: -80vh 35vw auto 35vw;
+}
+
+.emailText {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: small;
+    width: 90%;
+    margin: 15px 15px 15px 40px;
+    padding-top: 30px;
+    line-height: 2;
+}
+
+.emailBtn {
+    width: 50%;
+    height: 40px;
+    margin: 40px 25% 20px 25%;
+    background-color: gold;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Crimson Text', serif;
+    cursor: pointer;
+}
+
+.emailBtn:hover {
+    background-color: orange;
+    transition: .5s ease;
+
 }
 
 @keyframes webdesign {

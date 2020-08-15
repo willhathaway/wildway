@@ -6,4 +6,5 @@
     width:80%;
     margin-left: 10%;
     min-height: 80vh;
+    border-top: 5px double black;
 }

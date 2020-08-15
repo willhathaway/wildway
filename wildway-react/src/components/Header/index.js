@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./style.css";
 
+// center the fucking header please
 
 function Header(props) {
 
-    
 
     if (props.hidden === false) {
 
