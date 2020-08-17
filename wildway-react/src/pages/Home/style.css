@@ -2,14 +2,41 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
+.homeDiv {
+    background-color: black;
+
+    width: 100%;
+    margin: 0 auto;
+    transition: transform 0.25s;
+    will-change: transform;
+}
+
+.homeContainer {
+    min-height: 100vh;
+    
+}
+
+.koi {
+    margin-top: 15px;
+    min-height: 100vh;
+    max-width: none;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.header {
+    display: none;
+}
+
 .bar {
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
     opacity: .9;
     background-color: black;
     position: absolute;
-    margin-top: -50%;
-    width: 100vw;
-    height: 26%;
+    margin-top: -70vh;
+    height: 195px;
 }
 
 .animate {
@@ -122,18 +149,227 @@
 .webDesignIndex {
     opacity: 0;
     width: 100vw;
-    margin-top: -50px;
+    margin-top: -30px;
     animation: webdesign 5s forwards ease;
     animation-delay: 2s;
 }
 
 .webDesignIndex p {
     font-family: 'Crimson Text', serif;
-    margin-left:12.5px;
+    margin-left: 12.5px;
     font-size: small;
     color: white;
     text-align: center;
     letter-spacing: 15px;
+}
+
+.wildwayAlt {
+    display: none;
+}
+
+.scrollBtn {
+    width:100vw;
+    height: 150px;
+    text-align: center;
+    margin-left: 0;
+    position: absolute;
+    top: 77vh;
+}
+
+.scrollBtnImg, .scrollBtn a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    color: white;
+    transition: .2s ease-in-out;
+
+}
+
+.scrollBtnImg:hover {
+    transform: scale(1.1);
+}
+
+#clickToScroll {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: clickToScroll 1s forwards ease;
+    animation-delay: 1s;
+    color: white;
+}
+
+.contactScrollBtn {
+    width:96vw;
+    height: 150px;
+    text-align: center;
+    margin-left: 0;
+    position: absolute;
+    top: 182vh;
+    transform: scale(0.7);
+}
+
+.contactScrollBtnImg, .contactScrollBtn a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    color: white;
+    transition: .2s ease-in-out;
+
+}
+
+.contactScrollBtnImg:hover {
+    transform: scale(1.1);
+}
+
+.topScrollBtn {
+    width: 100vw;
+    height: 150px;
+    text-align: center;
+    margin-left: 0;
+    position: absolute;
+    top: 265vh;
+    transform: scale(0.7);
+
+}
+
+@keyframes clickToScroll {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.7);
+
+    }
+}
+
+@keyframes clickToScrollReverse {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+
+.scrollBtn a:hover  #clickToScroll {
+    
+    animation: clickToScrollReverse 0.7s forwards ease-in-out;
+
+}
+
+.sectionTitleDiv {
+    width: 96vw;
+    padding-top: 10px;
+    position: absolute;
+}
+
+/* 
+.sectionImg {
+    width: 60vw;
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+.sectionTitle {
+    font-size: x-large;
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    font-family: 'Crimson Text', serif;
+    margin-top: 10px;
+    margin-left: 20%;
+    color: black;
+}
+
+.aboutContainer {
+    min-height: 95vh;
+    padding: 20px;
+
+}
+
+.aboutDiv {
+    height: 95vh;
+    background-color: #e4ddc7;
+    width: 96vw;
+    margin: auto;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.me {
+    max-width: 30%;
+    float: right;
+    margin: 120px 10% 10% 10%;
+    border-radius: 50%;
+
+}
+
+.contactContainer {
+    min-height: 100vh;
+}
+
+.contactDiv {
+    height: 95vh;
+    background-color: black;
+    width: 96vw;
+    margin: auto;
+}
+
+.contactTitle {
+    font-size: x-large;
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    font-family: 'Crimson Text', serif;
+    margin-top: 10px;
+    margin-left: 20%;
+    color: gold !important;
+}
+
+.inquiries {
+    width: 30vw;
+    background-color: white;
+    min-height: 70vh;
+    margin: -80vh 35vw auto 35vw;
+}
+
+.emailText {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: small;
+    width: 80%;
+    margin: 15px 10% 10% 10%;
+    padding-top: 30px;
+    line-height: 2;
+}
+
+.emailBtn {
+    width: 50%;
+    height: 40px;
+    margin: 40px 25% 20px 25%;
+    background-color: gold;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Crimson Text', serif;
+    cursor: pointer;
+}
+
+.emailBtn:hover {
+    background-color: orange;
+    transition: .5s ease;
+
 }
 
 @keyframes webdesign {
@@ -148,11 +384,11 @@
     }
 }
 
-.line {
-    margin: 35px;
+.homeLine {
+    margin: 35px 0px 35px 0px;
     height: 1px;
-    width: 100vw;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgb(255, 0, 0) 50%, rgba(0,0,0,1) 90%);
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgb(255, 0, 0) 50%, rgba(0, 0, 0, 1) 90%);
 
 }
 
@@ -179,11 +415,8 @@ nav a {
     border: 1px 0 1px 0 solid #efefef;
 }
 
-nav a:hover {
-    transform: scale(1.3);
-    transition: all .5s;
-    color: white;
-}
+
+/* for smaller displays: */
 
 @media only screen and (max-width: 980px) {
 
@@ -191,6 +424,19 @@ nav a:hover {
         display: block;
     }
 
+    .header {
+        display: block;
+    }
+
+    .bar {
+        display: block;
+        opacity: 1;
+        position: absolute;
+        padding: 15px 0px 25px 0px;
+        height: 130px;
+        margin-top: -101vh;
+
+        }
 
     #divPrime {
         display: none;
@@ -200,6 +446,81 @@ nav a:hover {
         -o-transition: none !important;
         -ms-transition: none !important;
         transition: none !important;
+    }
+
+    .wildwayAlt {
+        font-size: larger;
+        display: block;
+        font-family: 'Crimson Text', serif;
+        margin-left: 12.5px;
+        color: white;
+        text-align: center;
+        letter-spacing: 15px;
+        margin: 20px;
+    }
+
+    nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .webDesignIndex {
+        margin-top: -15px;
+    }
+
+    .homeLine {
+        margin: 15px 0px 15px 0px;
+    }
+
+    .koi {
+        height: 100vh;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .scrollBtn {
+        display: none;
+    }
+
+    .sectionTitle {
+        display: block;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .aboutContainer {
+        padding: 0;
+        top: 165px;
+        position: absolute;
+    }
+
+    /* .aboutDiv {
+        width: 90%;
+        margin: 5%;
+        max-height: 70vh;
+        background-color: black;
+        color: white;
+    } */
+
+    .aboutDiv {
+        display: none;
+    }
+
+
+    .me {
+        display: none;
+    }
+
+    .sectionImgDiv {
+        display: none;
+    }
+
+    .contactContainer {
+        padding: 0;
     }
 
 }

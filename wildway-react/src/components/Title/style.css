@@ -2,7 +2,22 @@
 
 .title {
     font-size: xx-large;
-    margin: 10px;
-    padding: 20px 15px 20px 15px;
-    font-family: "Josefin Sans", cursive;
+    margin: 5%;
+    padding: 20px 0px 20px 0px;
+    /* font-family: "Josefin Sans", cursive; */
+    font-family: 'Crimson Text', serif;
+    width: 90%;
+    text-align: center;
+}
+
+.postTitle {
+    padding: 15px;
+}
+
+.postContent {
+    padding: 15px;
+}
+
+.postImage {
+    padding: 15px;
 }

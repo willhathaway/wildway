@@ -1,6 +1,6 @@
 .Wrapper {
     width: 100vw;
-    height: 110vh;
+    min-height: 110vh;
     margin-top: -16px;
     background-color: black;
 }

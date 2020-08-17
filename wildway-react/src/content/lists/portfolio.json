@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Helios Dayplanner",
+        "image": "../../content/images/helios-img.png",
+        "description": "A simple task manager and planner. Build with React, NodeJS, and MongoDB with Auth0 user authentication.",
+        "technologies": ["React.js", "Node.js", "MongoDB", "Auth0", "Moment.js", "Express.js"],
+        "deployedLink": "https://helios-day.herokuapp.com/",
+        "githubLink": "www.github.com"
+    },
+    {
+        "name": "VitX Nutrition and Fitness Tracker",
+        "image": "test.png",
+        "description": "A streamlined exercise and nutrition tracker.",
+        "technologies": ["Node.js", "MySQL", "Sequelize.js", "Express.js", "Google Authentication", "jQuery", "Bootstrap"],
+        "deployedLink": "https://vitx-project.herokuapp.com/",
+        "githubLink":"https://github.com/willhathaway/project-2"
+    },
+    {
+        "name": "Daniel Hathaway Woodworking",
+        "image": "test.png",
+        "description": "A React-based business site for local craftsman and carpenter Daniel Hathaway (who happens to be my father).",
+        "technologies": ["React.js"],
+        "deployedLink": "www.google.com",
+        "githubLink": "https://github.com/willhathaway/dhwoodworking"
+    },
+    {
+        "name": "Friend Finder",
+        "image": "test.png",
+        "description": "A mock friend-matching service in which users answer a selection of questions to find the closest match in the database.",
+        "technologies": ["Javascript", "Bootstrap" , "jQuery", "Node.js", "Express.js"],
+        "deployedLink": "https://willhathaway-friend-finder.herokuapp.com/",
+        "githubLink": "https://github.com/willhathaway/FriendFinder"
+    },
+    {
+        "name": "Train Scheduler",
+        "image": "test.png",
+        "description": "This project uses Firebase to store and modify mock train data.",
+        "technologies": ["Firebase", "Javascript", "Bootstrap", "jQuery", "MomentJS"],
+        "deployedLink": "https://willhathaway.github.io/TrainScheduler/",
+        "githubLink": "https://github.com/willhathaway/TrainScheduler"
+    },
+    {
+        "name": "News Project",
+        "image": "test.png",
+        "description": "Cloud Compare allows users to compare how two different news sources report on a given keyword. The results of the comparison are displayed using Highcharts word cloud.",
+        "technologies": ["Highcharts", "Firebase authentication", "jQuery", "Bootstrap","News API"],
+        "deployedLink": "https://willhathaway.github.io/NewsProject/",
+        "githubLink": "https://github.com/willhathaway/NewsProject"
+    },
+    {
+        "name": "GifTastic",
+        "image": "test.png",
+        "description": "GifTastic uses AJAX requests to the Giphy API to return gifs of whatever monster is selected. Users can also add their own request to the list.",
+        "technologies": ["Javascript", "Bootstrap", "jQuery"],
+        "deployedLink": "https://willhathaway.github.io/GifTastic/",
+        "githubLink": "https://github.com/willhathaway/GifTastic"
+    },
+    {
+        "name": "Trivia Game",
+        "image": "test.png",
+        "description": "A timed Halloween-themed trivia game.",
+        "technologies": ["MomentJS", "Javascript", "Bootstrap", "jQuery"],
+        "deployedLink": "https://willhathaway.github.io/TriviaGame/",
+        "githubLink": "https://github.com/willhathaway/TriviaGame"
+    }
+]

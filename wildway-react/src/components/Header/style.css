@@ -3,11 +3,12 @@
     opacity: .9;
     background-color: black;
     position: relative;
-    width: 100vw;
+    width: 96vw;
     margin-bottom: 20px;
 }
 
 .wildway {
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .webDesign {
-    width: 100vw;
+    width: 96vw;
     margin-top: -30px;
 
 }
@@ -41,6 +42,157 @@
 .line {
     margin: 35px;
     height: 1px;
-    width: 100vw;
+    width: 80vw;
     background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgb(255, 0, 0) 50%, rgba(0,0,0,1) 90%);
 }
+
+
+@media only screen and (max-width: 980px) {
+
+    .header {
+        display: block;
+        opacity: 1;
+        position: absolute;
+        padding: 15px 0px 25px 0px;
+        height: 120px;
+    }
+
+    .webDesign {
+        width: 75%;
+        margin: auto;
+        opacity: 100;
+    }
+
+    .line {
+        width: 70vw;
+        margin: auto;
+        opacity: 100;
+
+    }
+
+    .wildway p {
+        margin: 5px;
+        width: 75%;
+        margin: auto;
+        opacity: 100;
+
+    }
+
+    .headerButtons {
+        padding-top: 25px;
+    }
+
+    /* #nav-journal, #nav-contact, #nav-portfolio {
+        display:
+    } */
+
+}
+
+@media only screen and (max-width: 380px) {
+
+
+    .header {
+        height: 200px;
+    }
+    .wildway {
+        width: 100%;
+    }
+
+
+    .wildway p {
+        font-size: smaller;
+    }
+    .webDesign {
+        font-size: smaller;
+    }
+
+    .btn02 {
+        width: 40px;
+    }
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headerButtons {
+    float: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: -10px;
+  /*   padding: 2em 0em; */
+  }
+  
+
+
+  
+  .btn02 {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    text-decoration: none;
+    min-width: 80px;
+    margin: -10px 5px 10px 5px;
+    padding-bottom: 20px;
+  }
+  .btn02:hover {
+    text-decoration: none;
+  }
+  
+  /*btn_background*/
+  .effect02 {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: white;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  }
+  
+  .effect02::before,
+  .effect02 span{
+      margin: 0 auto;
+      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-duration: 0.4s;
+  }
+  
+  /* 文字1を上に */
+  .effect02:hover{
+    background-color: none;
+  }
+  
+  /* HOVERしたら文字1を上に */
+  .effect02:hover span{
+    -webkit-transform: translateY(-400%) scale(-0.1,20);
+            transform: translateY(-400%) scale(-0.1,20);
+  }
+  
+  /*文字2*/
+  .effect02::before{
+    content: attr(data-sm-link-text);
+      color: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1,20);
+            transform: translateY(500%) scale(-0.1,20);
+  }
+  
+  /* HOVERしたら文字2を上に */
+  .effect02:hover::before{
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1,1);
+            transform: translateY(0) scale(1,1);
+  }
+  

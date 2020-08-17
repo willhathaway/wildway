@@ -1,0 +1,18 @@
+.journalPost {
+    width: 80%;
+    margin: 2% 10% 2% 10%;
+    background-color: paleturquoise;
+    border-radius: 10px;
+    font-family: 'Crimson Text', serif;
+
+}
+
+
+@media only screen and (max-width: 380px) {
+
+    .journalPost {
+        margin-top: 160px;
+        margin-bottom: -100px;
+        height: 300px
+    }
+}
