@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./style.css";
 import Koi from "../../content/images/koi2.jpg"
 import Arrow from "../../content/images/arrow.png"
+import contactArrow from "../../content/images/contactArrow.png"
+import topArrow from "../../content/images/topArrow.png"
 import Face from "../../content/images/myface.jpg"
 import AboutMe from "../../content/images/about-me.png"
 import ContactMe from "../../content/images/contact.png"
@@ -16,7 +18,7 @@ function Home() {
     return (
 
         <div className="homeDiv">
-            <div className="homeContainer">
+            <div className="homeContainer" id="home">
                 <img src={Koi} className="koi"></img>
 
                 <div className="bar">
@@ -52,11 +54,19 @@ function Home() {
 
                         <div className="wildwayIndex"><p>WILDWAY</p></div>
                         <div>
-                            <nav>
-                                <a href="/journal" id="nav-about">journal</a>
-                                <a href="/#contact" id="nav-contact">inquires</a>
-                                <a href="/portfolio" id="nav-portfolio">portfolio</a>
-                            </nav>
+
+                        <div class="headerButtons">
+                                
+                                <a href="/journal" className="btn02 effect02 " data-sm-link-text="journal"><span>journal</span></a>
+                            
+                            
+                                <a href="/#contact" className="btn02 effect02 " data-sm-link-text="inquiries"><span>inquiries</span></a>
+                          
+                                <a href="/portfolio" className="btn02 effect02 "  data-sm-link-text="portfolio"><span>portfolio</span></a>
+                            
+                        </div>
+
+                
                         </div>
                     </a>
                 </div>
@@ -78,6 +88,8 @@ function Home() {
 
                     <img src={Face} className="me"></img>
 
+                    <div className="contactScrollBtn"><a href="/#contact"><p id="clickToScroll">click to scroll</p><img className="scrollBtnImg" src={contactArrow}></img></a></div>
+
 
                 </div>
 
@@ -92,14 +104,21 @@ function Home() {
                     </div>
 
 
+
+
                 </div>
-                <div className="inquiries">
+                <div className="inquiries" id="">
 
                     <p className="emailText">Please click below to send me an email. I will respond as soon as possible. Thank you.</p>
                     
                     <button className="emailBtn"><a href="mailto:william.hathaway38@gmail.com" subject="inquiry">Send an email</a></button>
 
+
+
                 </div>
+
+                <div className="topScrollBtn"><a href="/#home"><p id="clickToScroll">click to scroll</p><img className="scrollBtnImg" src={topArrow}></img></a></div>
+
 
             </div>
         </div>

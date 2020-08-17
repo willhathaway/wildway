@@ -1,10 +1,20 @@
 .contentDiv {
     background: rgb(176,176,176);
-    background: linear-gradient(0deg, rgb(221, 212, 233) 10%, rgb(254, 253, 255) 90%);
+    background: whitesmoke;
     opacity: 1;
     margin-top: 20px;
+    margin-bottom: 20px;
     width:80%;
     margin-left: 10%;
     min-height: 80vh;
     border-top: 5px double black;
 }
+/* 
+
+@media only screen and (max-width: 380px) {
+
+    .contentDiv { 
+        top: 100px;
+    }
+
+} */

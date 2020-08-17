@@ -4,6 +4,7 @@ import Header from '../../components/Header/index.js';
 import Title from "../../components/Title/index.js";
 import ContentDiv from "../../components/ContentDiv";
 import PortfolioItem from "../../components/PortfolioItem";
+import portfolioList from "../../content/lists/portfolio.json";
 
 
 function Portfolio() {
@@ -16,8 +17,13 @@ function Portfolio() {
 
             <ContentDiv>
                 <Title title="~ Portfolio ~" />
-                <PortfolioItem projectName="Helios Dayplanner" projectImage="img" projectDesc="A simple task manager and planner. Build with React, NodeJS, and MongoDB with Auth0 user authentication" /> 
+                {portfolioList.map((project, i ) => {
+                    return <PortfolioItem projectName={project.name} projectImage={project.image} projectDesc={project.description} technologies={project.technologies} deployed={project.deployedLink} github={project.githubLink} /> 
+                })}
+                <div className="bottom"></div>
             </ContentDiv>
+
+            
 
         </div>
 

@@ -6,3 +6,13 @@
     font-family: 'Crimson Text', serif;
 
 }
+
+
+@media only screen and (max-width: 380px) {
+
+    .journalPost {
+        margin-top: 160px;
+        margin-bottom: -100px;
+        height: 300px
+    }
+}
