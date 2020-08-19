@@ -11,11 +11,10 @@ function PortfolioItem(props) {
 
 
     return (
-        <div className="portfolioItem" style={{backgroundImage: `url(${image})`}}>
+        <div className="portfolioItem" >
             <h2 className="projectName">{props.projectName}</h2>
             <p className="projectDesc">{props.projectDesc}</p>
             <div className="techs">
-                <p className="tech">Built with:</p>
                 {props.technologies.map((technology, i) => {
                     if (i === props.technologies.length - 1){
                     return <div className="tech"><p>{technology}</p></div>
@@ -30,7 +29,7 @@ function PortfolioItem(props) {
             <div className="links">
                 <div class="buttons">
                     <div class="container">
-                        <a href={props.deployed} class="btn effect04" data-sm-link-text="click here" target="_blank" rel="noopener noreferrer"><span>deployed project</span></a>
+                        <a href={props.deployed} class="btn effect04" data-sm-link-text="click here" target="_blank" rel="noopener noreferrer"><span>live demo</span></a>
                     </div>
                 </div>
                 <div class="buttons">

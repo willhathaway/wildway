@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
 
-// center the fucking header please
 
 function Header(props) {
 
@@ -19,7 +18,7 @@ function Header(props) {
 
                     <div id="nav-buttons">
                         <nav>
-
+                        <div className="headerButtonsContainer">
                             <div class="headerButtons">
                                 
                                     <a href="/journal" className="btn02 effect02 " data-sm-link-text="journal"><span>journal</span></a>
@@ -29,6 +28,7 @@ function Header(props) {
                               
                                     <a href="/portfolio" className="btn02 effect02 "  data-sm-link-text="portfolio"><span>portfolio</span></a>
                                 
+                            </div>
                             </div>
                         </nav>
                     </div>

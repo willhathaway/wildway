@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import "./style.css";
 import Koi from "../../content/images/koi2.jpg"
-import Arrow from "../../content/images/arrow.png"
+import Cupid from "../../content/images/Cupid.png"
+import Artemis from "../../content/images/Artemis.png"
+import Centaur from "../../content/images/Centaur.png"
 import contactArrow from "../../content/images/contactArrow.png"
 import topArrow from "../../content/images/topArrow.png"
-import Face from "../../content/images/myface.jpg"
+import Face from "../../content/images/myface.png"
 import AboutMe from "../../content/images/about-me.png"
 import ContactMe from "../../content/images/contact.png"
 import Bio from "../../components/Bio";
 
-// center the fucking section titles
-
-// while you're at it, add the fucking scroll button to the about me page please
 
 function Home() {
 
@@ -70,9 +69,12 @@ function Home() {
                         </div>
                     </a>
                 </div>
+
+            <div className="sub980About" > <Bio /> </div>
+
             </div>
 
-            <div className="scrollBtn"><a href="/#about"><p id="clickToScroll">click to scroll</p><img className="scrollBtnImg" src={Arrow}></img></a></div>
+            <div className="scrollBtn"><a href="/#about"><p id="clickToScroll">click to scroll</p><img className="scrollBtnImg" src={Cupid}></img></a></div>
 
             <div className="aboutContainer" id="about">
 
@@ -80,15 +82,16 @@ function Home() {
                 <div className="aboutDiv">
 
                     <div className="sectionTitleDiv">
-                        <h1 className="sectionTitle">~ A Brief Biography ~</h1>
+                        <h1 className="sectionTitle"></h1>
                     </div>
 
                     <Bio />
 
-
+                <div class="faceContainer">
                     <img src={Face} className="me"></img>
+                    </div>
 
-                    <div className="contactScrollBtn"><a href="/#contact"><p id="clickToScroll">click to scroll</p><img className="scrollBtnImg" src={contactArrow}></img></a></div>
+                    <div className="contactScrollBtn"><a href="/#contact"><p id="clickToScroll">click to scroll</p><img className="contactScrollBtnImg" src={Artemis}></img></a></div>
 
 
                 </div>
@@ -100,7 +103,7 @@ function Home() {
                 <div className="contactDiv">
 
                     <div className="sectionTitleDiv">
-                        <h1 className="contactTitle">~ Inquires ~</h1>
+                        <h1 className="contactTitle">Inquires</h1>
                     </div>
 
 
@@ -109,7 +112,7 @@ function Home() {
                 </div>
                 <div className="inquiries" id="">
 
-                    <p className="emailText">Please click below to send me an email. I will respond as soon as possible. Thank you.</p>
+                    <h6 className="emailText">Please click below to send me an email. I will respond as soon as possible. Thank you.</h6>
                     
                     <button className="emailBtn"><a href="mailto:william.hathaway38@gmail.com" subject="inquiry">Send an email</a></button>
 
@@ -117,7 +120,7 @@ function Home() {
 
                 </div>
 
-                <div className="topScrollBtn"><a href="/#home"><p id="clickToScroll">click to scroll</p><img className="scrollBtnImg" src={topArrow}></img></a></div>
+                <div className="topScrollBtn"><a href="/#home"><img className="topScrollBtnImg" src={Centaur}></img><p id="clickToScrollUp">back to top</p></a></div>
 
 
             </div>

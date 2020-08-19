@@ -5,7 +5,7 @@ function JournalPost(props) {
     
         return (
             <div className="journalPost">
-               <h3 className="postTitle">{props.title}</h3>
+               <h2 className="postTitle">{props.title}</h2>
                <p className="postContent">{props.content}</p>
                <p className="postDate">{props.date}</p>
                <img className="postImage">{props.image}</img>

@@ -2,9 +2,26 @@
     display: block;
 }
 
+.portfolioItems {
+    width: 60vw;
+    text-align: center;
+}
+
 .bottom {
-    height: 30px;
+    height: 320px;
     width: 100%;
     margin: 5px;
     padding: 5px;
+}
+
+.bottom .topScrollBtn {
+    margin-top: -340px;
+}
+
+.bottom .topScrollBtn .topScrollBtnImg {
+    filter: invert(100%);
+}
+
+.bottom .topScrollBtn #clickToScrollUp {
+    color: white;
 }
