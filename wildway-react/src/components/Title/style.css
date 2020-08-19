@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+
 .title {
     font-size: xx-large;
     margin: 5%;
     padding: 20px 0px 20px 0px;
     /* font-family: "Josefin Sans", cursive; */
-    font-family: 'Crimson Text', serif;
-    width: 90%;
+    /* font-family: 'Crimson Text', serif; */
+    text-align: center;
+}
+
+.title h1 {
+    font-family: 'Libre Caslon Display', serif;
+    font-weight: 400;
+    width: 20%;
+    margin: 0 40% 0 40%;
     text-align: center;
 }
 

@@ -46,6 +46,15 @@
     background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgb(255, 0, 0) 50%, rgba(0,0,0,1) 90%);
 }
 
+.headerButtons {
+    width: 40%;
+}
+
+.headerButtonsContainer {
+    width: 100%;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 980px) {
 

@@ -15,8 +15,8 @@ function Journal() {
             <Header hidden={false}/>
 
             <ContentDiv>
-                <Title title="~ Journal ~" />
-                <JournalPost title="COMING SOON" content="This page will be a home for essays and notes written by myself and others, as well as links to things I find interesting" img="testImg"/>
+                <Title title="Journal" />
+                <JournalPost title="Coming soon" content="This page will be a home for essays and notes written by myself and others, as well as links to things I find interesting" img="testImg"/>
             </ContentDiv>
 
         </div>
