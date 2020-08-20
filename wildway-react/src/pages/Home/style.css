@@ -501,17 +501,6 @@ nav a {
         z-index: -1;
     }
 
-    .sub980About {
-        display: none;
-        width: 96%;
-        margin-left: 2%;
-        background-color: whitesmoke;
-        position: absolute;
-        margin-top: -70vh;
-        height: 70vh;
-        overflow: auto;
-    }
-
     .aboutText {
         z-index: 2;
         margin-top: -20px !important;
