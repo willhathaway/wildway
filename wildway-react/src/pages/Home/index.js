@@ -10,6 +10,7 @@ import Face from "../../content/images/myface.png"
 import AboutMe from "../../content/images/about-me.png"
 import ContactMe from "../../content/images/contact.png"
 import Bio from "../../components/Bio";
+import MobileHome from "../../components/MobileHome"
 
 
 function Home() {
@@ -70,7 +71,7 @@ function Home() {
                     </a>
                 </div>
 
-            <div className="sub980About" > <Bio /> </div>
+            
 
             </div>
 
@@ -95,6 +96,8 @@ function Home() {
 
 
                 </div>
+
+                < MobileHome />
 
 
             </div>

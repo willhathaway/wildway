@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+.mobileHome {
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+
+    .mobileHome {
+        display: block;
+        width: 100vw;
+        height: 70vh;
+        position: absolute;
+        margin-top: 10vh;
+        overflow: auto;
+    }
+
+    .contents {
+        height: 180vh;
+    }
+
+    .contentBlock {
+        height: 400px;
+        width: 80%;
+        margin: 0px 10% 70vh 10%;
+        background-color: black;
+    }
+
+    .block1 {
+        margin-top: 80vh;
+    }
+
+    .contentBlockTitle {
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        font-family: 'Libre Caslon Display', serif;
+        font-weight: 400;
+        font-size: x-large;
+    }
+
+    .contentBlockText {
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 400;
+        font-size: medium;
+    }
+
+    .contentBlock li {
+        margin-left: 30px;
+        width: 80%;
+        color: white;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 400;
+        font-size: small;
+    }
+
+    .mobileImg {
+        width:100vw;
+        text-align: center;
+        margin: 0px;
+        margin-top: -400px;
+        margin-bottom: 200px;
+    }
+
+    .mobileCupid {
+        width:100vw;
+        max-width: 150px;
+    }
+
+    .mobileArtemis {
+        width:100vw;
+        max-width: 150px;
+    }
+
+    .mobileCentaur {
+        width:100vw;
+        max-width: 150px;
+    }
+
+}

@@ -12,7 +12,7 @@ function Header(props) {
                 <div id="bar">
                     <a href='/'>
                         <div className="wildway"><p className="wildwayPara">WILDWAY</p></div>
-                        <div className="webDesign"><p>WEB DESIGN</p></div>
+                        <div className="webDesign"><p>web design</p></div>
                     </a>
                     <div className="line"></div>
 
