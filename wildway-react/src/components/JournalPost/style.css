@@ -28,7 +28,7 @@
 @media only screen and (max-width: 380px) {
 
     .journalPost {
-        margin-top: 160px;
+        padding-top:30px;
         margin-bottom: -100px;
         height: 300px
     }

@@ -11,7 +11,7 @@ function Header(props) {
             <div className="header">
                 <div id="bar">
                     <a href='/'>
-                        <div className="wildway"><p>WILDWAY</p></div>
+                        <div className="wildway"><p className="wildwayPara">WILDWAY</p></div>
                         <div className="webDesign"><p>WEB DESIGN</p></div>
                     </a>
                     <div className="line"></div>
@@ -22,7 +22,6 @@ function Header(props) {
                             <div class="headerButtons">
                                 
                                     <a href="/journal" className="btn02 effect02 " data-sm-link-text="journal"><span>journal</span></a>
-                                
                                 
                                     <a href="/#contact" className="btn02 effect02 " data-sm-link-text="inquiries"><span>inquiries</span></a>
                               

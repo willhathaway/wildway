@@ -8,12 +8,21 @@
     min-height: 180vh;
     border-top: 5px double black;
 }
-/* 
 
-@media only screen and (max-width: 380px) {
 
-    .contentDiv { 
-        top: 100px;
+@media only screen and (max-width: 900px) {
+
+   .contentDiv {
+       padding-top: 150px;
+       height: 400vh;
+   }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .contentDiv {
+        padding-top: 250px;
     }
-
-} */
+ 
+ }

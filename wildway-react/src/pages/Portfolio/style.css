@@ -15,7 +15,8 @@
 }
 
 .bottom .topScrollBtn {
-    margin-top: -340px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .bottom .topScrollBtn .topScrollBtnImg {
@@ -25,3 +26,35 @@
 .bottom .topScrollBtn #clickToScrollUp {
     color: white;
 }
+
+@media only screen and (max-width: 980px) {
+
+    .topScrollBtn {
+        padding-top: 200px;
+    }
+ 
+ }
+
+ @media only screen and (max-width: 900px) {
+
+    .topScrollBtn {
+        padding-top: 150vh;
+    }
+ 
+ }
+
+ @media only screen and (max-width: 700px) {
+
+    .topScrollBtn {
+        padding-top: 202vh;
+    }
+ 
+ }
+
+ @media only screen and (max-width: 360px) {
+
+    .topScrollBtn {
+        padding-top: 250vh;
+    }
+ 
+ }

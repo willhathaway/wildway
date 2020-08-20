@@ -15,8 +15,8 @@
 .title h1 {
     font-family: 'Libre Caslon Display', serif;
     font-weight: 400;
-    width: 20%;
-    margin: 0 40% 0 40%;
+    width: 80%;
+    margin: 0 10% 0 10%;
     text-align: center;
 }
 
@@ -31,3 +31,11 @@
 .postImage {
     padding: 15px;
 }
+
+@media only screen and (max-width: 360px) {
+
+    .title {
+        margin: 20px;
+    }
+ 
+ }
