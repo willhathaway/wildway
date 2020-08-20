@@ -25,18 +25,21 @@
 }
 
 .webDesign {
-    width: 96vw;
+    width: 100%;
+    margin: 0;
     margin-top: -30px;
+    text-align: center;
 
 }
 
 .webDesign p {
     font-family: 'Crimson Text', serif;
-    margin-left:12.5px;
     font-size: small;
     color: white;
     text-align: center;
     letter-spacing: 15px;
+    margin-left: 15px;
+    text-transform: uppercase;
 }
 
 .line {
@@ -67,8 +70,8 @@
     }
 
     .webDesign {
-        width: 75%;
         margin: auto;
+        margin-top: 10px;
         opacity: 100;
     }
 

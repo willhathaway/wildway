@@ -468,7 +468,6 @@ nav a {
         font-size: larger;
         display: block;
         font-family: 'Crimson Text', serif;
-        margin-left: 12.5px;
         color: white;
         text-align: center;
         letter-spacing: 15px;
@@ -481,7 +480,12 @@ nav a {
     }
 
     .webDesignIndex {
-        margin-top: -15px;
+        margin-top: -10px;
+        margin-left:0;
+    }
+
+    .webDesignIndex p {
+        margin-left:0;
     }
 
     .homeLine {
@@ -587,5 +591,4 @@ nav a {
     }
 
 }
-
 
