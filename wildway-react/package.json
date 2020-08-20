@@ -1,5 +1,6 @@
 {
   "name": "wildway-react",
+  "homepage": "http://www.wildwaydesigns.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

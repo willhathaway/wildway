@@ -354,7 +354,7 @@
 
 .inquiries {
     width: 30vw;
-    background-color: white;
+    background-color: whitesmoke;
     min-height: 70vh;
     margin: -80vh 35vw auto 35vw;
 }
@@ -373,7 +373,7 @@
     width: 50%;
     height: 40px;
     margin: 10px 25% 10px 25%;
-    background-color: white;
+    background-color: whitesmoke;
     border: none;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -450,7 +450,7 @@ nav a {
         position: absolute;
         padding: 15px 0px 25px 0px;
         height: 150px;
-        margin-top: -101vh;
+        margin-top: -102vh;
 
         }
 
@@ -493,38 +493,42 @@ nav a {
         object-fit: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        border-bottom: 10px solid ;
+        z-index: -1;
     }
 
     .sub980About {
-        display: block;
-        width: 90%;
-        margin-left: 5%;
-        background-color: black;
-        opacity: 0.9;
+        display: none;
+        width: 96%;
+        margin-left: 2%;
+        background-color: whitesmoke;
         position: absolute;
-        margin-top: -75vh;
-        max-height: 75vh;
+        margin-top: -70vh;
+        height: 70vh;
         overflow: auto;
     }
 
     .aboutText {
         z-index: 2;
         margin-top: -20px !important;
-        color: white;
+        color: black;
         overflow: auto !important;
+        min-height: 70vh;
     }
 
     .bioText {
-        color: white;
+        color: black;
         margin: 10px !important;
         padding: 0 !important;
     }
 
-    p {
-        color: white !important; 
-    }
 
     .scrollBtn {
+        display: none;
+    }
+
+
+    #clickToScroll {
         display: none;
     }
 
@@ -547,7 +551,6 @@ nav a {
         display: none;
     }
 
-
     .me {
         display: none;
     }
@@ -558,16 +561,31 @@ nav a {
 
     .contactContainer {
         padding: 0;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 96vw;
+        z-index: 3;
+        color: black;
+        background-color: whitesmoke;
+        background: whitesmoke;
+        position: absolute;
     }
-
+   
     .inquiries {
         width: 90%;
         margin-left: 5%;
+        background-color: whitesmoke;
+
     }
 
     .emailText p {
         color: black !important;
     }
 
+    .contactContainer .topScrollBtn {
+        display: none;
+    }
 
 }
+
+
