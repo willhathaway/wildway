@@ -22,6 +22,7 @@ function MobileHome(props) {
                     <div className="contentBlock block1">
                         <h3 class="contentBlockTitle">Welcome to WILDWAY</h3>
                         <p className="contentBlockText">WILDWAY is the personal website and portfolio of myself, William Hathaway, artist, designer and UI/UX developer.</p>
+                        <p className="contentBlockText">I build professional websites and applications for businesses and individuals.</p>
                         <p className="contentBlockText">Everything you see here was designed, drawn, painted, written and programmed (with the exception of one or two CSS animations) by me.</p>
                     </div>
 
@@ -48,8 +49,16 @@ function MobileHome(props) {
 
                     <div className="contentBlock block3">
                         <h3 class="contentBlockTitle">What I can do for you</h3>
-                        <p className="contentBlockText">I build professional websites and applications for businesses and individuals. Click here to look at some of my previous work.</p>
-                        <p className="contentBlockText">Are you ready to take your online presense to the next level? Scroll down a send me an email. If it's the right fit, I look forward to working with you.</p>
+                        <p className="contentBlockText">Proficient in:</p>
+                        <ul>
+                            <li>Javascript (React.js, Node.js, Express.js)</li>
+                            <li>Drupal 8 and Drupal 9</li>
+                            <li>Wordpress</li>
+                            <li>Databases (MongoDB, MySQL, Firebase)</li>
+                            <li>Design and animation (Blender, Procreate, Photoshop, inDesign)</li>
+                        </ul>
+                        <p className="contentBlockText">Click here to look at some of my previous work.</p>
+                        <p className="contentBlockText">Are you ready to take your online presense to the next level? Scroll down a send me an email.</p>
                     </div>
 
                     </Fade>
