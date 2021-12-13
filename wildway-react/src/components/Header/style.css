@@ -1,211 +1,362 @@
 .header {
-    padding: 15px;
-    opacity: .9;
-    background-color: black;
-    position: relative;
-    width: 96vw;
-    margin-bottom: 20px;
+  z-index: 1;
+}
+
+.bar {
+  padding: 15px 0px 15px 0px;
+  background-color: black;
+  height: 195px;
+}
+
+.animate {
+  width: 750px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(23, 1fr);
+  grid-column-gap: 5px;
+}
+
+.letterDiv {
+  /* font-family: 'Megrim', cursive; */
+  font-family: "Crimson Text", serif;
+  color: white;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  float: left;
+  height: 75px;
+  font-size: larger;
+  position: relative;
+  z-index: 1;
+}
+
+.nw {
+  animation: rise 5s forwards;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+}
+
+@keyframes rise {
+  from {
+    top: 0px;
+    opacity: 1;
+  }
+
+  to {
+    top: -75px;
+    opacity: 0;
+  }
+}
+
+#div1,
+#div2,
+#div3 {
+  animation: unify1 5s forwards;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+}
+
+@keyframes unify1 {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 945%;
+  }
+}
+
+#div9 {
+  animation: unify2 5s forwards;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+}
+
+@keyframes unify2 {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 355%;
+  }
+}
+
+#div21,
+#div22,
+#div23 {
+  animation: unify3 5s forwards;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+}
+
+@keyframes unify3 {
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: 945%;
+  }
+}
+
+.wildwayIndex {
+  font-family: "Crimson Text", serif;
+  letter-spacing: 20px;
+  color: white;
+  opacity: 1;
+  text-align: center;
+  text-indent: 20px;
+  display: none;
+  margin-top: 30px;
+}
+
+.webDesignIndex {
+  opacity: 0;
+  width: 100vw;
+  margin-top: -30px;
+  animation: webdesign 5s forwards ease;
+  animation-delay: 2s;
+}
+
+.webDesignIndex p {
+  font-family: "Crimson Text", serif;
+  margin-left: 12.5px;
+  font-size: small;
+  color: white;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+/* /////////// */
+
+.header2 {
+  padding: 15px;
+  opacity: 0.9;
+  background-color: black;
+  position: relative;
+  width: 96vw;
+  margin-bottom: 20px;
+  display: none;
 }
 
 .wildway {
-    width: 100%;
-    margin-top: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .wildway p {
-    font-family: 'Crimson Text', serif;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    letter-spacing: 20px;
-    font-size: large;
-    color: white;
-    opacity: 1;
-    text-align: center;
-    text-indent: 20px;
+  font-family: "Crimson Text", serif;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  letter-spacing: 20px;
+  font-size: large;
+  color: white;
+  opacity: 1;
+  text-align: center;
+  text-indent: 20px;
 }
 
 .webDesign {
-    width: 100%;
-    margin: 0;
-    margin-top: -30px;
-    text-align: center;
-
+  width: 100%;
+  margin: 0;
+  margin-top: -30px;
+  text-align: center;
 }
 
 .webDesign p {
-    font-family: 'Crimson Text', serif;
-    font-size: small;
-    color: white;
-    text-align: center;
-    letter-spacing: 15px;
-    margin-left: 15px;
-    text-transform: uppercase;
+  font-family: "Crimson Text", serif;
+  font-size: small;
+  color: white;
+  text-align: center;
+  letter-spacing: 15px;
+  margin-left: 15px;
+  text-transform: uppercase;
 }
 
 .line {
-    margin: 35px;
-    height: 1px;
-    width: 80vw;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgb(255, 0, 0) 50%, rgba(0,0,0,1) 90%);
+  margin: 35px;
+  height: 1px;
+  width: 80vw;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 10%,
+    rgb(255, 0, 0) 50%,
+    rgba(0, 0, 0, 1) 90%
+  );
 }
 
 .headerButtons {
-    width: 40%;
+  width: 40%;
 }
 
 .headerButtonsContainer {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
-
 @media only screen and (max-width: 980px) {
+  .header {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    padding: 15px 0px 25px 0px;
+    height: 130px;
+  }
 
-    .header {
-        display: block;
-        opacity: 1;
-        position: absolute;
-        padding: 15px 0px 25px 0px;
-        height: 130px;
-    }
+  .webDesign {
+    margin: auto;
+    margin-top: 10px;
+    opacity: 100;
+  }
 
-    .webDesign {
-        margin: auto;
-        margin-top: 10px;
-        opacity: 100;
-    }
+  .line {
+    width: 70vw;
+    margin: auto;
+    opacity: 100;
+  }
 
-    .line {
-        width: 70vw;
-        margin: auto;
-        opacity: 100;
+  .wildway p {
+    margin: 5px;
+    width: 75%;
+    margin: auto;
+    opacity: 100;
+  }
 
-    }
+  .headerButtons {
+    padding-top: 25px;
+  }
 
-    .wildway p {
-        margin: 5px;
-        width: 75%;
-        margin: auto;
-        opacity: 100;
-
-    }
-
-    .headerButtons {
-        padding-top: 25px;
-    }
-
-    /* #nav-journal, #nav-contact, #nav-portfolio {
+  /* #nav-journal, #nav-contact, #nav-portfolio {
         display:
     } */
-
 }
 
 @media only screen and (max-width: 380px) {
+  .header {
+    height: 200px;
+  }
+  .wildway {
+    width: 100%;
+  }
 
+  .wildwayPara {
+    color: white !important;
+    font-size: smaller;
+  }
+  .webDesign {
+    font-size: smaller;
+  }
 
-    .header {
-        height: 200px;
-    }
-    .wildway {
-        width: 100%;
-    }
-
-
-    .wildwayPara {
-        color: white !important;
-        font-size: smaller;
-    }
-    .webDesign {
-        font-size: smaller;
-    }
-
-    .btn02 {
-        width: 40px;
-    }
-
-
+  .btn02 {
+    width: 40px;
+  }
 }
 
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .headerButtons {
-    float: left;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-top: -10px;
+  margin: 0;
+  padding: 0;
+}
+
+.headerButtons {
+  float: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: -10px;
   /*   padding: 2em 0em; */
-  }
-  
+}
 
+.btn02 {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  text-decoration: none;
+  min-width: 80px;
+  margin: -10px 5px 10px 5px;
+  padding-bottom: 20px;
+}
+.btn02:hover {
+  text-decoration: none;
+}
 
-  
-  .btn02 {
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 45px;
-    text-decoration: none;
-    min-width: 80px;
-    margin: -10px 5px 10px 5px;
-    padding-bottom: 20px;
-  }
-  .btn02:hover {
-    text-decoration: none;
-  }
-  
-  /*btn_background*/
-  .effect02 {
-    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
-    display: var(--uismLinkDisplay);
-    color: white;
-    position: relative;
-    transition-duration: 0.4s;
-    overflow: hidden;
-  }
-  
-  .effect02::before,
-  .effect02 span{
-      margin: 0 auto;
-      transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-      transition-duration: 0.4s;
-  }
-  
-  /* 文字1を上に */
-  .effect02:hover{
-    background-color: none;
-  }
-  
-  /* HOVERしたら文字1を上に */
-  .effect02:hover span{
-    -webkit-transform: translateY(-400%) scale(-0.1,20);
-            transform: translateY(-400%) scale(-0.1,20);
-  }
-  
-  /*文字2*/
-  .effect02::before{
-    content: attr(data-sm-link-text);
-      color: #FFF;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    -webkit-transform: translateY(500%) scale(-0.1,20);
-            transform: translateY(500%) scale(-0.1,20);
-  }
-  
-  /* HOVERしたら文字2を上に */
-  .effect02:hover::before{
-    letter-spacing: 0.05em;
-    -webkit-transform: translateY(0) scale(1,1);
-            transform: translateY(0) scale(1,1);
-  }
-  
+/*btn_background*/
+.effect02 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: white;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.effect02::before,
+.effect02 span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+/* 文字1を上に */
+.effect02:hover {
+  background-color: none;
+}
+
+/* HOVERしたら文字1を上に */
+.effect02:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+/*文字2*/
+.effect02::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+/* HOVERしたら文字2を上に */
+.effect02:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}
+
+/* <div id="bar">
+                    <a href='/'>
+                        <div className="wildway"><p className="wildwayPara">WILDWAY</p></div>
+                        <div className="webDesign"><p>web design</p></div>
+                    </a>
+                    <div className="line"></div>
+
+                    <div id="nav-buttons">
+                        <nav>
+                        <div className="headerButtonsContainer">
+                            <div class="headerButtons">
+                                
+                                    <a href="/journal" className="btn02 effect02 " data-sm-link-text="journal"><span>journal</span></a>
+                                
+                                    <a href="/#contact" className="btn02 effect02 " data-sm-link-text="inquiries"><span>inquiries</span></a>
+                              
+                                    <a href="/portfolio" className="btn02 effect02 "  data-sm-link-text="portfolio"><span>portfolio</span></a>
+                                
+                            </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+           */

@@ -1,0 +1,42 @@
+.contactDiv {
+  background-color: black;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  width: 30vw;
+}
+
+.inquiries {
+  background-color: whitesmoke;
+  min-height: 50vh;
+  border-left: 9px double black;
+  border-right: 9px double black;
+}
+
+.emailText {
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-size: large;
+  width: 80%;
+  margin: 15px 10% 10% 10%;
+  padding-top: 30px;
+  line-height: 2;
+}
+
+.inquiries .emailBtn {
+  width: 50%;
+  height: 40px;
+  margin: 10px 25% 10px 25%;
+  background-color: whitesmoke;
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: "Libre Caslon Display", serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.emailBtn:hover {
+  width: 80%;
+  margin-left: 10%;
+}

@@ -3,20 +3,18 @@ import "./style.css";
 import Header from "../../components/Header/index.js";
 import Title from "../../components/Title/index.js";
 import ContentDiv from "../../components/ContentDiv";
-import ContactDiv from "../../components/ContactDiv/index.js";
+import Centaur from "../../content/images/Centaur.png";
 
-function Contact() {
+function Consulting() {
   return (
     <div>
       <Header hidden={false} />
-      <div>
-        <ContentDiv>
-          <Title title="Contact" />
-          <ContactDiv />
-        </ContentDiv>
-      </div>
+
+      <ContentDiv>
+        <Title title="Consulting" />
+      </ContentDiv>
     </div>
   );
 }
 
-export default Contact;
+export default Consulting;
