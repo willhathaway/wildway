@@ -1,0 +1,13 @@
+.header {
+  display: block;
+}
+
+.tutoringText {
+  margin: 40px 60px 60px 60px;
+  font-size: x-large;
+}
+
+.tutoringText p {
+  font-family: "Libre Caslon Display", serif;
+  color: black;
+}

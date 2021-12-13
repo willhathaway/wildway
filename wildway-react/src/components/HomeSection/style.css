@@ -1,0 +1,42 @@
+.homeSection {
+  width: 50%;
+  height: 50%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.homeImg:hover {
+  transform: scale(1.1);
+}
+
+.homeImg:hover > #quoteText {
+  visibility: visible;
+}
+
+.sectionTitle {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 !important;
+}
+
+.homeImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+#quoteText {
+  visibility: hidden;
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}

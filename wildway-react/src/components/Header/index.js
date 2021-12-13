@@ -1,44 +1,128 @@
 import React, { Component } from "react";
 import "./style.css";
 
-
 function Header(props) {
-
-
-    if (props.hidden === false) {
-
-        return (
-            <div className="header">
-                <div id="bar">
-                    <a href='/'>
-                        <div className="wildway"><p className="wildwayPara">WILDWAY</p></div>
-                        <div className="webDesign"><p>web design</p></div>
-                    </a>
-                    <div className="line"></div>
-
-                    <div id="nav-buttons">
-                        <nav>
-                        <div className="headerButtonsContainer">
-                            <div class="headerButtons">
-                                
-                                    <a href="/journal" className="btn02 effect02 " data-sm-link-text="journal"><span>journal</span></a>
-                                
-                                    <a href="/#contact" className="btn02 effect02 " data-sm-link-text="inquiries"><span>inquiries</span></a>
-                              
-                                    <a href="/portfolio" className="btn02 effect02 "  data-sm-link-text="portfolio"><span>portfolio</span></a>
-                                
-                            </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+  return (
+    <div className="header">
+      <div className="bar">
+        <a href="/">
+          <div className="animate" id="divPrime">
+            <div className="ww letterDiv" id="div1">
+              W
             </div>
-        )
-    }
-    else {
-        return <div></div>
-    }
+            <div className="ww letterDiv" id="div2">
+              I
+            </div>
+            <div className="ww letterDiv" id="div3">
+              L
+            </div>
+            <div className="nw letterDiv" id="div4">
+              L
+            </div>
+            <div className="nw letterDiv" id="div5">
+              I
+            </div>
+            <div className="nw letterDiv" id="div6">
+              A
+            </div>
+            <div className="nw letterDiv" id="div7">
+              M
+            </div>
+            <div className="nw letterDiv" id="div8">
+              {" "}
+            </div>
+            <div className="ww letterDiv" id="div9">
+              D
+            </div>
+            <div className="nw letterDiv" id="div10">
+              A
+            </div>
+            <div className="nw letterDiv" id="div11">
+              N
+            </div>
+            <div className="nw letterDiv" id="div12">
+              I
+            </div>
+            <div className="nw letterDiv" id="div13">
+              E
+            </div>
+            <div className="nw letterDiv" id="div14">
+              L
+            </div>
+            <div className="nw letterDiv" id="div15">
+              {" "}
+            </div>
+            <div className="nw letterDiv" id="div16">
+              H
+            </div>
+            <div className="nw letterDiv" id="div17">
+              A
+            </div>
+            <div className="nw letterDiv" id="div18">
+              T
+            </div>
+            <div className="nw letterDiv" id="div19">
+              H
+            </div>
+            <div className="nw letterDiv" id="div20">
+              A
+            </div>
+            <div className="ww letterDiv" id="div21">
+              W
+            </div>
+            <div className="ww letterDiv" id="div22">
+              A
+            </div>
+            <div className="ww letterDiv" id="div23">
+              Y
+            </div>
+          </div>
+          <div className="wildwayAlt">WILDWAY</div>
+          <div className="webDesignIndex">
+            <p>WEB DESIGN</p>
+          </div>
+          <div className="homeLine"></div>
+
+          <div className="wildwayIndex">
+            <p>WILDWAY</p>
+          </div>
+          <div>
+            <div class="headerButtons">
+              <a
+                href="/consulting"
+                className="btn02 effect02 "
+                data-sm-link-text="consulting"
+              >
+                <span>consulting</span>
+              </a>
+
+              <a
+                href="/tutoring"
+                className="btn02 effect02 "
+                data-sm-link-text="tutoring"
+              >
+                <span>tutoring</span>
+              </a>
+
+              <a
+                href="/portfolio"
+                className="btn02 effect02 "
+                data-sm-link-text="portfolio"
+              >
+                <span>portfolio</span>
+              </a>
+              <a
+                href="/contact"
+                className="btn02 effect02 "
+                data-sm-link-text="contact"
+              >
+                <span>contact</span>
+              </a>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  );
 }
-
-
 export default Header;
